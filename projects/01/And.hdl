@@ -11,5 +11,7 @@ CHIP And {
     OUT out;
     
     PARTS:
-    //
+    // For demonstration, we will only use Nand Gate to create primitive boolean gates such as and, or, not
+    Nand(a=a, b=b, out=nandout);
+    Nand(a=nandout, b = nandout, out=out);
 }
